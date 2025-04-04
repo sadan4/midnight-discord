@@ -60,6 +60,15 @@ body {
             'userPanel userPanel page';
         gap: 0 var(--gap);
     }
+    
+    .vc-betterFolders-sidebar-grid {
+        grid-template-columns: [start] min-content [guildsEnd] min-content [sidebarEnd] min-content [channelsEnd] 1fr [end];
+        grid-template-areas: 
+        "titleBar titleBar titleBar titleBar"
+        "guildsList betterFoldersSidebar notice notice"
+        "guildsList betterFoldersSidebar channelsList page"
+        "userPanel userPanel userPanel page";
+    }
 
     .panels_c48ade /* user panel */ {
         width: 100%;
